@@ -1,0 +1,32 @@
+{
+    "Bourgeoisie": {
+        "cities": [
+            "Bourg",
+            "East-Beren"
+        ],
+        "districkts": [
+            "Altan",
+            "Gonomar"
+        ]
+    },
+    "Basurmania": {
+        "cities": [
+            "Besur",
+            "Matta"
+        ],
+        "districkts": [
+            "West-Lond",
+            "Ray-Tan"
+        ]
+    },
+    "Pechenegia": {
+        "cities": [
+            "Pechen",
+            "Rewon"
+        ],
+        "districkts": [
+            "Nord-kalka",
+            "Tromun"
+        ]
+    }
+}

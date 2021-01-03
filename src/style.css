@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'PixelFont';
+	src: url(http://papersplease.rf.gd/static/fonts/BMmini.TTF);
+	/* src: url(http://127.0.0.1:8080/static/fonts/BMmini.TTF); */
+}
+
+
+body,
+html {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+button {
+	font-family: PixelFont;
+	color: black;
+	z-index: 100;
+}
+
+#border,
+#turn {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.top {
+	position: absolute;
+	width: 75px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.bottom {
+	position: absolute;
+	width: 75px;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+}
+
+#next {
+	position: absolute;
+	bottom: 200px;
+}
+
+#day {
+	position: absolute;
+	bottom: 150px;
+}
+
+#allow {
+	position: absolute;
+	bottom: 100px;
+}
+
+#refuse {
+	position: absolute;
+	bottom: 50px;
+}
+
+#desk,
+#papers {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Стили для окна штрафа */
+.fine {
+	position: fixed;
+	height: 100px;
+	width: 300px;
+	right: -300px;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	padding-left: 5px;
+	font-size: 24px;
+	font-family: PixelFont;
+}
+
+.fineText {
+	width: inherit;
+	text-align: left;
+	/* vertical-align: center;
+	 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-left: 10px;
+}
+
+.line {
+	position: absolute;
+	height: inherit;
+	width: 5px;
+	left: 0;
+	background: red;
+}
+
+/* Вывод ошибок */
+#mistakes {
+	position: fixed;
+	top: 30%;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	font-size: 40px;
+	font-family: PixelFont;
+	color: #E99565;
+	background: #96131C;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px 0 0 5px;
+}
+
+/* Диалог */
+#dialog {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	transition: all .5s ease-in-out;
+	opacity: 1;
+	pointer-events: none;
+}
+
+.phrase {
+	position: relative;
+	display: block;
+
+	width: fit-content;
+	height: fit-content;
+	padding: 5px;
+	border: 3px solid black;
+	background: #EEDFDA;
+	border-radius: 6px;
+	margin-top: 10px;
+	font-family: PixelFont;
+	font-size: 24px;
+
+	max-width: 75%;
+	text-align: justify;
+}
+
+.citizen {
+	left: unset;
+	transform: translateX(-100%);
+	left: 100%;
+}
+
+/* 
+.phrase .inspector {
+	left: 0;
+}
+
+.phrase .citizen {
+	right: 0; */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+    <title>Papers please</title>
+    <script>
+        let exports = {};
+    </script>
+</head>
+
+<body>
+    <!-- <button id="nextDay">Следующий день!</button>
+    <button id="next">Следующий!</button>
+    <hr>
+    <button id="allow">Разрешить</button>
+    <button id="refuse">Отказать</button> -->
+    <main onselectstart="return false">
+        <canvas id="border">Your browser does not support canvas</canvas>
+        <canvas id="turn"></canvas>
+        <canvas id="desk"></canvas>
+        <canvas id="papers"></canvas>
+
+        <div class="top">
+            <button id="next">NEXT</button>
+            <button id="day">NEXT DAY</button>
+        </div>
+
+        <div class="bottom">
+            <button id="allow">ALLOW</button>
+            <button id="refuse">REFUSE</button>
+        </div>
+        <div id="mistakes"></div>
+        <div id="dialog" onselectstart="return false">
+            <!-- <div class="phrase inspector">afhpdsfasd</div>
+            <div class="phrase citizen">afhpdsfasd</div>
+            <div class="phrase inspector">afhpdsfasd</div>
+            <div class="phrase citizen">afhpdsfasd</div> -->
+        </div>
+    </main>
+
+
+</body>
+
+</html>
